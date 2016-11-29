@@ -1,0 +1,15 @@
+{
+  "name": "spider_ss_pku_cn",
+  "version": "1.0.0",
+  "description": "crawling news from http://www.ss.pku.edu.cn/index.php/newscenter/news/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yangsen",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "request": "^2.79.0"
+  }
+}
