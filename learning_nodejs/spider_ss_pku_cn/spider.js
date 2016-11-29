@@ -40,7 +40,7 @@ function startRequest(x){
 
 
             //the next news
-            var nextlink = "http://www.ss.pku.edu.cn" + $("li.next a").attr('href');
+            var nextLink = "http://www.ss.pku.edu.cn" + $("li.next a").attr('href');
             str1 = nextLink.split('-');
             str = encodeURI(str1[0]);
             if (i <= 500) {
@@ -60,15 +60,16 @@ function startRequest(x){
 function saveContent($, news_title) {
     $('.article-content p').each(function(index, item) {
         var x = $(this).next();
-        var y = x.substring(0,2).trim();
-        if(y == ''){
-            x = x + 'n';
+        // console.log("!!!"+x);
+        // var y = x.substr(0, 2).trim();
+        // if(y == ''){
+            x = x + '\n';
             fs.appendFile('./data/'+news_title+'.txt', x, 'utf-8', function(err){
                 if(err){
                     console.log(err);
                 }
             });
-        }
+        // }
     });
 }
 
