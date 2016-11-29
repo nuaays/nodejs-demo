@@ -8,4 +8,5 @@ npm init
 npm install cheerio -save
 npm install request -save
 ```
+* http://blog.csdn.net/davidsu33/article/details/52639427
 
